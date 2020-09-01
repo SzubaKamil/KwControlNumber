@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" gridLinesVisible="false" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="main.Controller">
+    <Label text="Numer KW" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <font>
+            <Font size="15" />
+        </font>
+    </Label>
+    <Label text="Cyfra Kontolna" GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <font>
+            <Font size="15" />
+        </font>
+    </Label>
+    <TextField fx:id="kwNumberField" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="controlNumberField" alignment="CENTER" disable="true" onMouseClicked="#onFieldClick" GridPane.columnIndex="1" GridPane.rowIndex="1"  />
+    <Button onAction="#setKwNumber" text="Oblicz cyfrę kontrolna KW" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Button onAction="#nextKwNumber" prefWidth="154.0" text="Nastepny KW" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Button onAction="#previousKwNumber"  prefWidth="154.0" text="Poprzedni KW" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+
+</GridPane>
